@@ -1,1 +1,49 @@
-🚀 Just Built My First User Management REST API! Excited to share my latest backend project - a complete User Management System built with Node.js and Express.js! 💻 🔧 Tech Stack: • Backend: Node.js, Express.js • Database: MongoDB with Mongoose ODM • Development: Nodemon for hot reloading • Testing: Postman for API testing • Terminal: Warp (amazing developer experience!) 📋 Key Features Implemented: ✅ Full CRUD Operations - Create, Read, Update, Delete users ✅ RESTful API Design with proper HTTP methods and status codes ✅ MongoDB Integration with Mongoose for robust data modeling ✅ MVC Architecture - Clean separation with Models, Controllers, and Routes ✅ Custom Middleware for request logging and monitoring ✅ Error Handling with try-catch blocks and proper HTTP responses ✅ Data Validation ensuring all required fields are present 🎯 API Endpoints: • GET /users - Fetch all users • POST /users - Create new user • GET /users/:id - Get user by ID • PATCH /users/:id - Update user (last name) • DELETE /users/:id - Delete user • GET /users/name/:first_name - Find user by name 🔍 What I Learned: • Building scalable backend architecture • Database modeling and relationships • RESTful API best practices • Middleware implementation for logging • Comprehensive API testing with Postman • Error handling and validation 📊 User Schema includes: • Personal info (first_name, last_name, email) • Professional details (job_title, gender) • Automatic timestamps for tracking The middleware logs every request with timestamp, HTTP method, IP address, and path - super helpful for debugging and monitoring! 📝 Testing Experience: Used Postman extensively to test all endpoints - from creating users to updating and deleting them. The request logging helped me track every API call for debugging purposes. Warp Terminal Experience: Special shoutout to Warp terminal which made the development process so smooth with its excellent autocomplete and modern interface! 🖥️ This project really solidified my understanding of backend development fundamentals. Already planning to add authentication and authorization as next features! 🔐
+# 👤 User Management REST API
+
+A complete **User Management System** built with **Node.js, Express.js, and MongoDB**.  
+This project demonstrates how to build a scalable backend with proper RESTful API design, middleware, and CRUD operations.
+
+---
+
+## 🚀 Tech Stack
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB with Mongoose ODM  
+- **Development Tools:** Nodemon (hot reloading), Warp Terminal  
+- **Testing:** Postman  
+
+---
+
+## 📋 Features
+✅ Full CRUD Operations – Create, Read, Update, Delete users  
+✅ RESTful API with proper HTTP methods & status codes  
+✅ MongoDB integration with schema modeling using Mongoose  
+✅ MVC Architecture – Separation of Models, Controllers, and Routes  
+✅ Custom Middleware for request logging & monitoring  
+✅ Error Handling with proper responses  
+✅ Input validation for required fields  
+
+---
+
+## 🎯 API Endpoints
+
+### User Routes
+- `GET /users` → Fetch all users  
+- `POST /users` → Create a new user  
+- `GET /users/:id` → Get user by ID  
+- `PATCH /users/:id` → Update user details (last name)  
+- `DELETE /users/:id` → Delete user  
+- `GET /users/name/:first_name` → Find user by first name  
+
+---
+
+## 📊 User Schema
+```json
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "john.doe@example.com",
+  "job_title": "Software Engineer",
+  "gender": "Male",
+  "createdAt": "2025-08-25T10:00:00.000Z",
+  "updatedAt": "2025-08-25T10:00:00.000Z"
+}
